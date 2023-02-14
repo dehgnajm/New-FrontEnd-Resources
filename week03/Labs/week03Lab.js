@@ -12,6 +12,8 @@ let alphabetString = 'abcdefghijklmnopqrstuvwxyz';
 //Convert the alphabetString to an array and print it to the console (see split method)
 
 // YOUR CODE BELOW THIS LINE
+let alphabetArray = alphabetString.split("");
+console.log(alphabetArray);
 
 
 
