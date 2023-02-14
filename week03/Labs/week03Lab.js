@@ -12,6 +12,8 @@ let alphabetString = 'abcdefghijklmnopqrstuvwxyz';
 //Convert the alphabetString to an array and print it to the console (see split method)
 
 // YOUR CODE BELOW THIS LINE
+let alphabetArray = alphabetString.split("");
+console.log(alphabetArray);
 
 
 
@@ -25,7 +27,9 @@ let alphabetArray = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l',
 // Convert it to a string and print it to the console (see join method)
 
 // YOUR CODE BELOW THIS LINE
-
+alphabetArray.reverse();
+let reversedAlphabetString = alphabetArray.join('');
+console.log(reversedAlphabetString);
 
 
 
@@ -36,41 +40,42 @@ let alphabetArray = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l',
 console.log(' \n Question 3: array1 \n ');
 let array1 = [1, 5, 6, 9, 10, 14];
 //Using array1 above, solve the following questions
-    // a. Print the 3rd element in array1  
-    // b. Print the last element in array1
-    // c. Add 16 and 3 to array1 (see built-in array "push" method)
-    //          and Print the updated array.
-    // d. Print the 3rd element again.
-    // e. Print the last element again. Did it change from earlier? Are you able to get the last element that was just added?
+     
 
 // YOUR CODE BELOW THIS LINE
-
-
-
-
-
-
-
-
+// a. Print the 3rd element in array1  
+console.log(array1[2]);
+// b. Print the last element in array1
+console.log(array1[array1.length-1]);
+// c. Add 16 and 3 to array1 (see built-in array "push" method)
+array1.push(16,3);
+// and Print the updated array.
+console.log(array1);
+// d. Print the 3rd element again.
+console.log(array1[2]);
+// e. Print the last element again. Did it change from earlier? Are you able to get the last element that was just added?
+console.log(array1[array1.length-1]);
 
 
 // Question 4: Todo List
 console.log(' \n Question 4: Todo List \n ');
 // In this task, you will do multiple tasks. Print results to the console after every change to the array(s).
-    // a. Create a variable called myTodoList that holds an empty array
-    // b. Add three todo items (elements) to the array using a built-in array method
-    // c. Remove the second item (element) in the array
-    // d. Create another array, yourTodoList, and add two todo items
-    // e. Create another array, ourTodoList
-    // f. Combine myTodoList and yourTodoList into ourTodoList (see built-in array "concat" method or "spread" operator for an idea how to accomplish this task). Either method is fine.
+   
 
 // YOUR CODE BELOW THIS LINE
-
-
-
-
-
-
+// a. Create a variable called myTodoList that holds an empty array
+let myToDoList[];
+ // b. Add three todo items (elements) to the array using a built-in array method
+myToDoList.push('element1','element2','element3');
+// c. Remove the second item (element) in the array
+myToDoList.splice(1,1);
+ // d. Create another array, yourTodoList, and add two todo items
+let yourToDoList['item4','item5'];
+// e. Create another array, ourTodoList
+let ourToDoList[];
+ // f. Combine myTodoList and yourTodoList into ourTodoList (see built-in array "concat" method or "spread" operator for an idea how to accomplish this task). Either method
+is fine.
+let ourToDoList = [... myToDoList, ... yourToDoList];
 /*
  * Video 2:  FUNCTIONS
  */
